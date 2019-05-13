@@ -37,7 +37,6 @@ router.get('/video', function (req, res) {
       'Content-Type': 'video/mp4',
     }
     res.writeHead(200, head)
-    fs.createReadStream().pipe(res)
   }
 });
 
